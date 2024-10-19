@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Dashboard</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>Finance Dashboard</h1>
+        </header>
+        <main>
+            <section class="summary">
+                <h2>Expenditure Summary</h2>
+                <p>Total Spent:₹ <span id="totalSpent">0</span></p>
+                <p>Budget:₹ <span id="budget">0</span></p>
+                <p>Remaining:₹ <span id="remaining">0</span></p>
+            </section>
+            <section class="charts">
+                <div class="chart-container">
+                    <canvas id="categoryChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="timeChart"></canvas>
+                </div>
+            </section>
+            <section class="advice">
+                <h2>Financial Advice</h2>
+                <div id="adviceContent"></div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2023 e-budget. All rights reserved.</p>
+    </footer>
+    <script src="main.js"></script>
+   
+</body>
+</html>
